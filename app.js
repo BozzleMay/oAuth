@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(cookieSession({
     maxAge: 24 * 60 * 60 * 1000,
     //nneds to be hidden
-    keys: ['netNinjaisAwesome']
+    keys: ['********']
 }))
 
 app.use(passport.initialize())
