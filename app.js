@@ -24,7 +24,7 @@ app.use(passport.session())
 
 //connect to mongo db
 
-mongoose.connect('mongodb+srv://Bozzle:Balboa26@cluster0.wcncl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', () => {
+mongoose.connect(process.env.MONGO_DB_URI, () => {
     console.log('Connected to MongoDB')
 })
 
